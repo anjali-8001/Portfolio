@@ -1,0 +1,117 @@
+.banner {
+  height: calc(100vh - 0px);
+  position: relative;
+  padding-top: 150px;
+  /* background-image: url("../Images/stars.png"); */
+}
+.bannerIntro {
+  height: 100%;
+  padding: 100px 500px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bannerHeading {
+  font-size: 3rem;
+  background-color: #0c0c1d;
+  color: #66FCF1;
+}
+.bannerHeading span{
+  font-size: 1rem;
+}
+.bannerContent1 {
+  font-size: 24px;
+  color: #45A29E;
+  font-family: "Open Sans", sans-serif;
+  background-color: #0c0c1d;
+}
+.bannerContent2 {
+  font-size: 20px;
+  color: #cbc9cc;
+  font-family: "Open Sans", sans-serif;
+  background-color: #0c0c1d;
+}
+.bannerButton {
+  margin-top: 10px;
+  width: 210px;
+  border: 2px solid black;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px white solid;
+  cursor: pointer;
+}
+.bannerButton:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bannerButtonText {
+  padding: 10px 8px 10px 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.bannerButtonArrow {
+  background-color: #0a0b24;
+  font-size: 45px;
+  padding: 8px;
+  border-radius: 25px;
+}
+.bannerButtonArrow:hover {
+  background-color: #443a67;
+}
+.bannerImage {
+  position: absolute;
+  width: 300px;
+  top: 250px;
+  right: 100px;
+}
+.bannerImage img {
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .bannerIntro {
+    padding: 100px;
+  }
+  .bannerHeading {
+    padding-right: 200px;
+  }
+  .bannerImage {
+    height: 150px;
+    width: 150px;
+    right: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .bannerIntro {
+    padding: 50px;
+  }
+  .bannerHeading {
+    font-size: 30px;
+    padding-right: 120px;
+  }
+  .bannerImage {
+    height: 90px;
+    width: 90px;
+    right: 50px;
+    top: 200px;
+  }
+  .bannerContent1 {
+    font-size: 20px;
+  }
+  .bannerContent2 {
+    font-size: 15px;
+  }
+  .bannerButton {
+    width: 160px;
+  }
+  .bannerButtonText {
+    padding: 5px 3px 5px 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-self: center;
+  background-color: rgba(31, 40, 51, 0.9);
+  z-index: 100;
+
+}
+.navbarLogo {
+  margin-left: 100px;
+  width: 40%;
+}
+.navbarLogo p {
+  width: 50px;
+  font-weight: 600;
+  font-size: 35px;
+  color: #66FCF1;
+  font-family: "Raleway", sans-serif;
+}
+.navbarItemBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  width: 60%;
+}
+.navbarIcons {
+  display: flex;
+  align-items: center;
+}
+.navbarIcon {
+  margin-right: 10px;
+  height: 100%;
+  width: 40px;
+}
+.navbarIconGithub {
+  margin-right: 10px;
+  height: 100%;
+  width: 38px;
+}
+.navbarLink {
+  padding: 5px;
+}
+.sidebar {
+  visibility: hidden;
+}
+@media (max-width: 800px) {
+  .navbarLogo {
+    margin-right: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbarItemBox {
+    display: none;
+  }
+  .sidebar {
+    visibility: visible;
+  }
+}

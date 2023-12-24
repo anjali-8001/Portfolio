@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,600;0,800;0,900;1,100;1,200;1,300;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #C5C6C7;
+  box-sizing: border-box;
+}
+html {
+  /* background: linear-gradient(180deg, #0c0c1d, #111132); */
+  background-color: #0B0C10;
+  /* scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; */
+}
+a {
+  text-decoration: none;
+}
+section {
+  /* scroll-snap-align: center; */
+  max-height: auto;
+}

@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.footerLogo {
+  font-size: 25px;
+  font-weight: 900;
+  color:#66FCF1;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+.footerLinksItem{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
