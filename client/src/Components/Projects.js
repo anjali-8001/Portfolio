@@ -52,8 +52,7 @@ function Projects() {
         ref={ref}
         animate={
           isVisible && {
-            opacity: [0, 1],
-            scale: [0.5, 1],
+            x: [-100, 0],
             transition: { duration: 1 },
           }
         }
@@ -117,7 +116,7 @@ function Projects() {
             <img src={project4img}></img>
           </div>
           <div className="projectLinks">
-            <a className="firstLink" href="" target="_blank">Github</a>
+            <a className="firstLink" href="ithub.com/anjali-8001/Portfolio/" target="_blank">Github</a>
             <a href="" target="_blank">Website</a>
           </div>
         </motion.div>

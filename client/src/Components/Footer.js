@@ -20,7 +20,7 @@ function Footer() {
         <a href="https://github.com/anjali-8001" target="_blank" className="footerLinksItem">
           <img src={github} />
         </a>
-        <a className="footerLinksItem">
+        <a href="mailto:anjalisharma8001@gmail.com" target="_blank" className="footerLinksItem">
           <img src={mail} />
         </a>
         <a href="https://leetcode.com/anjali_8001/" target="_blank" className="footerLinksItem">

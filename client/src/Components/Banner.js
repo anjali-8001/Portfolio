@@ -61,8 +61,8 @@ function Banner() {
       opacity: 1,
       transition: {
         duration: 1.5,
-        // repeatType: "mirror",
-        // repeat: Infinity,
+        repeatType: "mirror",
+        repeat: Infinity,
       },
     },
   };
@@ -80,7 +80,7 @@ function Banner() {
           <br /> Anjali Sharma!
         </motion.p>
         <motion.p variants={variants} className="bannerContent1">
-          I'm a //text.
+          I'm a {text}.
         </motion.p>
         <motion.p variants={variants} className="bannerContent2">
          I'm a final-year Computer Science student pursuing my B.Tech. I'm deeply passionate about the ever-evolving world of technology. With an insatiable curiosity for innovation, I'm constantly exploring the latest trends and advancements in the digital realm. 
@@ -95,7 +95,6 @@ function Banner() {
           </a>
 
           <AiOutlineArrowRight
-            // whileTap={{ x: -100 }}
             className="bannerButtonArrow"
           />
         </motion.button>
