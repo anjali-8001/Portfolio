@@ -13,7 +13,6 @@
 }
 .bannerHeading {
   font-size: 4rem;
-  background-color: #0c0c1d;
   color: #66FCF1;
 }
 .bannerHeading span{
@@ -23,13 +22,11 @@
   font-size: 2rem;
   color: #45A29E;
   font-family: "Open Sans", sans-serif;
-  background-color: #0c0c1d;
 }
 .bannerContent2 {
   font-size: 20px;
   color: #cbc9cc;
   font-family: "Open Sans", sans-serif;
-  background-color: #0c0c1d;
 }
 .bannerButton {
   margin-top: 10px;
