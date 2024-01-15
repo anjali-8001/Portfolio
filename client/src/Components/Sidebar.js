@@ -15,7 +15,7 @@ function Sidebar() {
       },
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: "circle(25px at 50px 40px)",
       transition: {
         delay: 0.5,
         type: "spring",
@@ -73,7 +73,7 @@ function Sidebar() {
       </motion.div>
       
       <div className="sidebarButton">
-        <Hamburger toggled={open} toggle={setOpen} />
+        <Hamburger toggled={open} toggle={setOpen} size={24}/>
       </div>
     </motion.div>
   );

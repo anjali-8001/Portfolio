@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .footerLogo {
   font-size: 25px;
@@ -25,4 +25,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 500px){
+  .footerLinks{
+    gap: 20px;  
+}
+  .footerLinksItem img{
+    width: 25px;
+    height: 25px;
+  }
 }

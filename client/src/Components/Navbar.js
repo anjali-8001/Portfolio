@@ -1,12 +1,19 @@
-import React from "react";
-import { SiGithub } from "react-icons/si";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { CgMail } from "react-icons/cg";
+import React, { useEffect, useState } from "react";
+// import { SiGithub } from "react-icons/si";
+// import { TiSocialLinkedinCircular } from "react-icons/ti";
+// import { CgMail } from "react-icons/cg";
 import "../Styles/Navbar.css";
 import Sidebar from "./Sidebar";
 import { motion } from "framer-motion";
 
 function Navbar() {
+
+  const [activeSection, setActiveSection] = useState("Home");
+
+  useEffect(() => {
+    
+  })
+
   return (
     <div className="navbar">
       <div className="sidebar">

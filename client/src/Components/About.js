@@ -11,34 +11,42 @@ function About() {
   const isInView = useInView(ref);
 
   useEffect(() => {
-    if(isInView && !isVisible){
+    if (isInView && !isVisible) {
       setIsVisible(true);
     }
-  },[isInView,isVisible]);
+  }, [isInView, isVisible]);
 
   return (
     <div ref={ref} className="about" id="about">
       <motion.div
-        animate={isVisible && { x: [100, 0], transition: { duration: 1 } }}
+        animate={
+          isVisible && { x: [100, 0], transition: { duration: 1, delay: 1 } }
+        }
         className="aboutTitle1"
       >
         Get to know more
       </motion.div>
       <motion.h1
-        animate={isVisible && { x: [100, 0], transition: { duration: 1 } }}
+        animate={
+          isVisible && { x: [100, 0], transition: { duration: 1, delay: 1 } }
+        }
         className="aboutTitle2"
       >
         About <span>Me</span>
       </motion.h1>
       <div className="aboutContainer">
         <motion.div
-          animate={isVisible && { x: [-100, 0], transition: { duration: 1 } }}
+          animate={
+            isVisible && { x: [-100, 0], transition: { duration: 1, delay: 1 } }
+          }
           className="aboutImage"
         >
           <img src={AboutImg} alt="" />
         </motion.div>
         <motion.div
-          animate={isVisible && { x: [100, 0], transition: { duration: 1 } }}
+          animate={
+            isVisible && { x: [100, 0], transition: { duration: 1, delay: 1 } }
+          }
           className="aboutContent"
         >
           <div className="aboutContent1">
@@ -57,10 +65,10 @@ function About() {
           </div>
           <div className="aboutContent2">
             I'm doing my bachelor's from Dr. Akhilesh Das Gupta Institue of
-            Professional Studies affiliated to GGSIPU, Delhi. Passionate about
-            crafting seamless digital experiences through MongoDB, Express.js,
-            React, and Node.js. Eager learner, tech explorer, and future-focused
-            creator in the making.
+            Professional Studies affiliated to GGSIPU, Delhi. I'm passionate
+            about crafting seamless digital experiences through MongoDB,
+            Express.js, React, and Node.js. I'm an eager learner, tech explorer,
+            and future-focused creator in the making.
           </div>
         </motion.div>
       </div>

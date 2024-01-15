@@ -79,44 +79,44 @@ function Projects() {
         animate={isVisible && "show"}
         className="projectsBoxContainer"
       >
-        <motion.div variants={projectsVariants} className="projectsBox">
+        <motion.div variants={projectsVariants} whileHover={{scale:1.1}} className="projectsBox">
           <h1>Doctor Appointment Web App</h1>
           <div className="project">
             <img src={project1img}></img>
             <div className="hiddenTech"></div>
           </div>
           <div className="projectLinks">
-            <a className="firstLink" href="https://github.com/anjali-8001/docAppoint" target="_blank" >Github</a>
+            <a className="firstLink" href="https://github.com/anjali-8001/docAppoint" target="_blank" >Code</a>
             <a href="https://doc-appoint-six.vercel.app/" target="_blank">Website</a>
           </div>
         </motion.div>
-        <motion.div variants={projectsVariants} className="projectsBox ">
+        <motion.div variants={projectsVariants} whileHover={{scale:1.1}} className="projectsBox ">
           <h1>Amazon Clone</h1>
           <div className="project">
             <img src={project2img}></img>
           </div>
           <div className="projectLinks">
-            <a className="firstLink" href="https://github.com/anjali-8001/amazon-clone" target="_blank">Github</a>
+            <a className="firstLink" href="https://github.com/anjali-8001/amazon-clone" target="_blank">Code</a>
             <a href="https://tangerine-biscochitos-3d30d6.netlify.app/" target="_blank">Website</a>
           </div>
         </motion.div>
-        <motion.div variants={projectsVariants} className="projectsBox">
+        <motion.div variants={projectsVariants} whileHover={{scale:1.1}} className="projectsBox">
           <h1>Pothole Detection Web App</h1>
           <div className="project">
             <img src={project3img}></img>
           </div>
           <div className="projectLinks">
-            <a className="firstLink" href="https://github.com/DevanshSahni/Pothole-Detection" target="_blank">Github</a>
+            <a className="firstLink" href="https://github.com/DevanshSahni/Pothole-Detection" target="_blank">Code</a>
             <a href="https://github.com/DevanshSahni/Pothole-Detection" target="_blank">Website</a>
           </div>
         </motion.div>
-        <motion.div variants={projectsVariants} className="projectsBox">
+        <motion.div variants={projectsVariants} whileHover={{scale:1.1}} className="projectsBox">
           <h1>Portfolio Website</h1>
           <div className="project">
             <img src={project4img}></img>
           </div>
           <div className="projectLinks">
-            <a className="firstLink" href="ithub.com/anjali-8001/Portfolio/" target="_blank">Github</a>
+            <a className="firstLink" href="ithub.com/anjali-8001/Portfolio/" target="_blank">Code</a>
             <a href="" target="_blank">Website</a>
           </div>
         </motion.div>

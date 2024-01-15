@@ -88,7 +88,6 @@ function Skills() {
         <motion.div variants={skillsVariants} className="item">
           <img src={vscode} alt="" />
         </motion.div>
-        <motion.div className="blankItem"></motion.div>
 
         <motion.div variants={skillsVariants} className="item">
           <img src={git} alt="" />

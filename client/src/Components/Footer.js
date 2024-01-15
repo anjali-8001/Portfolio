@@ -27,7 +27,8 @@ function Footer() {
           <img src={leetcode} />
         </a>
       </div>
-      <p className="footerRights">Copyrights © 2023 Anjali Sharma. All rights reserved.</p>
+      <p className="footerRights">Copyrights © 2023 Anjali Sharma<center>All rights reserved</center></p>
+      
     </div>
   );
 }

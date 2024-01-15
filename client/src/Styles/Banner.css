@@ -21,16 +21,15 @@
 .bannerContent1 {
   font-size: 2rem;
   color: #45A29E;
-  font-family: "Open Sans", sans-serif;
 }
 .bannerContent2 {
   font-size: 20px;
   color: #cbc9cc;
-  font-family: "Open Sans", sans-serif;
+  line-height: 25px;
 }
 .bannerButton {
   margin-top: 10px;
-  width: 210px;
+  width: 185px;
   height: 50px;
   border: 2px solid black;
   border-radius: 25px;

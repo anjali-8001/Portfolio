@@ -5,8 +5,8 @@
   align-items: center;
   min-height: 100vh;
 }
-.about h1 span{
-  color: #66FCF1;
+.about h1 span {
+  color: #66fcf1;
 }
 .aboutTitle2 {
   font-size: 5rem;
@@ -39,11 +39,11 @@
 }
 .aboutContent1 .img1,
 .aboutContent1 .img2 {
-  width:40px;
+  width: 40px;
   height: 40px;
   align-self: center;
 }
-.subContent{
+.subContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,17 +52,32 @@
   border-radius: 10%;
   padding: 30px;
   flex: 1;
+  line-height: 25px;
 }
-.subContent p{
+.subContent p {
   font-size: 1.2rem;
 }
-.aboutContent2{
+.aboutContent2 {
   flex: 1.5;
   padding: 2% 5%;
   font-size: 1.2rem;
+  line-height: 25px;
 }
-@media (max-width: 800px){
-  .aboutImage{
+@media (max-width: 800px) {
+  .about {
+    font-size: 10px;
+  }
+  .aboutImage {
     display: none;
+  }
+  .aboutTitle2 {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .aboutContent1 {
+    display: flex;
+    flex-direction: column;
   }
 }

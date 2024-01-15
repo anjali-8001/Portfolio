@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../Styles/Contact.css";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import mail from "../Images/mail.svg";
 
 function Contact() {
   const ref = useRef();
@@ -37,19 +38,20 @@ function Contact() {
   return (
     <motion.div className="contact">
       <motion.div ref={ref} className="contactTextContainer">
-        <h1 className="contactTitle">Let's work together!</h1>
-        <div className="contactitem">
-          <h2>Mail</h2>
-          <div className="Contactvalue">anjalisharma8001@gmail.com</div>
-        </div>
-        <div className="contactitem">
-          <h2>Country</h2>
-
-          <div className="Contactvalue">India</div>
-        </div>
-        <div className="contactitem">
-          <h2>Phone</h2>
-          <div className="Contactvalue">+91-9732987788</div>
+        <h1 className="contactTitle">
+          Let's chat. <p>Tell me about your project!</p>
+        </h1>
+        <div className="contactitem">Lets create something together ✌️</div>
+        <div className="contactMail">
+          <motion.div whileHover={{ scale: 1.1 }} className="mailImg">
+            <a href="mailto:anjalisharma8001@gmail.com">
+              <img src={mail} alt="mailimg" />
+            </a>
+          </motion.div>
+          <div className="mailText">
+            <p>Mail me at:</p>
+            <p className="mailId">anjalisharma8001@gmail.com</p>
+          </div>
         </div>
       </motion.div>
       <motion.div className="contactForm">
@@ -57,7 +59,7 @@ function Contact() {
           className="phoneSvg"
           initial={{ opacity: 1 }}
           animate={isVisible && { opacity: 0 }}
-          transition={{ delay:0.5, duration: 3 }}
+          transition={{ delay: 0.5, duration: 3 }}
         >
           <svg
             width="100%"
@@ -84,23 +86,26 @@ function Contact() {
               stroke-width="0.2"
               initial={{ pathLength: 0 }}
               animate={isVisible && { pathLength: 1 }}
-              transition={{delay:0.5, duration: 3 }}
+              transition={{ delay: 0.5, duration: 3 }}
             />
           </svg>
         </motion.div>
-
-        <motion.form
-          ref={formRef}
+        <motion.div
           initial={{ opacity: 0 }}
           animate={isVisible && { opacity: 1 }}
           transition={{ delay: 3, duration: 1 }}
-          onSubmit={sendEmail}
+          className="contactFormMsg"
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea rows={10} required placeholder="Message" name="message" />
-          <button type="submit">Send</button>
-        </motion.form>
+          <div className="contactFormHeading">
+            Send me a message 🚀
+          </div>
+          <form ref={formRef} onSubmit={sendEmail}>
+            <input type="text" required placeholder="Name" name="name" />
+            <input type="email" required placeholder="Email" name="email" />
+            <textarea rows={10} required placeholder="Message" name="message" />
+            <motion.button whileHover={{ scale: 1.1 }} type="submit">Send</motion.button>
+          </form>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
