@@ -4,6 +4,7 @@ import AboutImg from "../Images/AboutImg.svg";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
 import { CiUser } from "react-icons/ci";
 import { motion, useInView } from "framer-motion";
+import { MdDownload } from "react-icons/md";
 
 function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -64,11 +65,19 @@ function About() {
             </div>
           </div>
           <div className="aboutContent2">
-            I'm doing my bachelor's from Dr. Akhilesh Das Gupta Institue of
-            Professional Studies affiliated to GGSIPU, Delhi. I'm passionate
-            about crafting seamless digital experiences through MongoDB,
-            Express.js, React, and Node.js. I'm an eager learner, tech explorer,
-            and future-focused creator in the making.
+            <p>
+              I'm doing my bachelor's from Dr. Akhilesh Das Gupta Institue of
+              Professional Studies affiliated to GGSIPU, Delhi. I'm passionate
+              about crafting seamless digital experiences through MongoDB,
+              Express.js, React, and Node.js. I'm an eager learner, tech
+              explorer, and future-focused creator in the making.
+            </p>
+            <button whileHover={{ scale: 1.1 }} className="AboutButton">
+              <a href="https://drive.google.com/file/d/1buBspsogAuCqd-FMpvaWFCBhnGhYjmT_/view?usp=sharing" target="_blank">
+                <p className="bannerButtonText">Resume</p>
+              </a>
+              <MdDownload className="downloadIcon" />
+            </button>
           </div>
         </motion.div>
       </div>

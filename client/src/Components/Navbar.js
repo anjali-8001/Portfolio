@@ -7,12 +7,9 @@ import Sidebar from "./Sidebar";
 import { motion } from "framer-motion";
 
 function Navbar() {
-
   const [activeSection, setActiveSection] = useState("Home");
 
-  useEffect(() => {
-    
-  })
+  useEffect(() => {});
 
   return (
     <div className="navbar">
@@ -32,13 +29,21 @@ function Navbar() {
         </motion.p>
       </div>
       <div className="navbarItemBox">
-        <a className="navbarItem navbarLink" href="#Home">Home</a>
+        <a className="navbarItem navbarLink" href="#Home">
+          Home
+        </a>
         <a className="navbarItem navbarLink" href="#Skills">
           Skills
         </a>
-        <a className="navbarItem navbarLink" href="#Projects">Projects</a>
-
-        <a className="navbarItem navbarLink" href="#Contact">Contact</a>
+        <a className="navbarItem navbarLink" href="#Projects">
+          Projects
+        </a>
+        <a className="navbarItem navbarLink" href="#About">
+          About
+        </a>
+        <a className="navbarItem navbarLink" href="#Contact">
+          Contact
+        </a>
       </div>
     </div>
   );
